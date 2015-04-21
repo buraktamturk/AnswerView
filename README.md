@@ -1,6 +1,6 @@
 # AnswerView
 
-The library mimics the circles used in optic forms.
+A library mimics the circles used in optic forms.
 
 ## Screenshot
 ![Image](https://raw.githubusercontent.com/buraktamturk/AnswerView/master/screenshots/screen1.png)
