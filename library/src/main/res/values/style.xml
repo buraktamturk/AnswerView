@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="aw_cevap_1">#FFFFFF</color>
+    <color name="aw_cevap_2">#FBE7EC</color>
+    <color name="aw_cevap_border">#D61D7D</color>
+    <color name="aw_cevap_ic">#FF555555</color>
+    <color name="aw_cevap_text">@color/aw_cevap_border</color>
+    <color name="aw_cevap_text_sel">@color/aw_cevap_1</color>
+
+    <declare-styleable name="AnswerView">
+        <attr name="aw_ShowTextWhenActive" format="boolean" />
+        <attr name="aw_NumberOfAnswers" format="integer" />
+        <attr name="aw_ShowNumber" format="boolean" />
+        <attr name="aw_Number" format="integer" />
+        <attr name="aw_changeOnClick" format="boolean" />
+        <attr name="aw_canCancelAnswer" format="boolean" />
+    </declare-styleable>
+</resources>

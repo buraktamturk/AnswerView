@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textSize="15sp"
+            tools:text="A"
+            android:id="@+id/chooice"
+            android:gravity="center"
+            android:textColor="@color/aw_cevap_text"
+            android:background="@drawable/answer_circle"
+            />
+    </LinearLayout>
+</merge>
