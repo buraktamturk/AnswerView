@@ -4,6 +4,11 @@ android {
     compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
+	lintOptions {
+        abortOnError false
+		checkReleaseBuilds false
+	}
+
     defaultConfig {
         minSdkVersion 7
         targetSdkVersion 21
@@ -21,3 +26,5 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
+apply from: 'https://raw.github.com/chrisbanes/gradle-mvn-push/master/gradle-mvn-push.gradle'

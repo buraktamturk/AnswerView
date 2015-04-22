@@ -14,17 +14,19 @@ It's simple
         android:layout_width="336dp"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        app:aw_changeOnClick="true" // the answer will change when user clicked on it, if false only callback will be executed (default value is true)
-        app:aw_canCancelAnswer="false" // can user cancel the answer that previosly answered (default value is true)
+        app:aw_changeOnClick="true" // if it's set to true the answer will change when user clicked on it, if not callback will make decision (default value is true)
+        app:aw_canCancelAnswer="false" // can user cancel the answer that previosly answered by clicking the answer twice (default value is true)
         app:aw_ShowNumber="true" // show number of the question (default value is false)
-        app:aw_NumberOfAnswers="6" // Number of Answers (A B C D E F) (default value is 5)
+        app:aw_NumberOfAnswers="6" // Number of answers (A B C D E F) (default value is 5)
     />
 
-You will be notified when user changes the Answer by OnAnswerChange interface (if you set ofcourse).
+You will be notified when user changes the Answer by OnAnswerChange interface, you can set it by calling onAnswerChange function of the view.
 
 ## Download
 
-It'll be available in Maven central shortly.
+```groovy
+compile 'org.buraktamturk:answerview:1.0.0'
+```
 
 # The MIT License (MIT)
 
