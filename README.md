@@ -25,7 +25,7 @@ You will be notified when user changes the Answer by OnAnswerChange interface, y
 ## Download
 
 ```groovy
-compile 'org.buraktamturk:answerview:1.0.0'
+compile 'org.buraktamturk:answerview:1.0.1'
 ```
 
 # The MIT License (MIT)
