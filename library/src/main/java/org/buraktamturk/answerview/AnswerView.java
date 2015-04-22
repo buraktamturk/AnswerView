@@ -80,6 +80,29 @@ public class AnswerView extends LinearLayout implements View.OnClickListener {
         }
     }
 
+    public void resize(int count) {
+        int index = getActiveIndex();
+
+        removeAllViews();
+
+        if(numberTextView != null) {
+            addView(numberTextView);
+        }
+
+        for(OneAnswerView oav : viewler) {
+            oav.setOnClickListener(null);
+        }
+
+        viewler = new OneAnswerView[count];
+        for(int i = 0 ; i < count; ++i) {
+            viewler[i] = (OneAnswerView)LayoutInflater.from(getContext()).inflate(R.layout.answer_one_view, this, false);
+            viewler[i].setIndex(i);
+            viewler[i].setOnClickListener(this);
+            viewler[i].setActive(index == i, this);
+            addView(viewler[i]);
+        }
+    }
+
     public void setNumber(int number) {
         if(numberTextView != null) {
             numberTextView.setText(Integer.toString(number));

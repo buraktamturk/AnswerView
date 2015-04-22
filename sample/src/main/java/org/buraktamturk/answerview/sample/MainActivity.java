@@ -21,6 +21,9 @@ public class MainActivity extends Activity implements AnswerView.OnAnswerChange 
         av = (AnswerView)findViewById(R.id.av);
         av.setOnAnswerChange(this);
         av.setActiveChar('E');
+
+        //av.setActiveChar('A');
+        //av.resize(2);
     }
 
     @Override
